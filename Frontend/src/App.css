@@ -1,190 +1,167 @@
-/* General Styles */
+/* --------- GLOBAL STYLES --------- */
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  background-color: #f0f9f4; /* Light green background */
+  font-family: 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+  background-color: #f4fdf8;
   color: #333;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/* Main Container */
-.container {
+/* --------- LAYOUT --------- */
+.app-layout {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 100vh; /* Full viewport height */
-  margin-top: 0; /* Remove the inline margin-top */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Header */
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #2e7d32; /* Dark green */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  animation: fadeIn 1s ease-in-out;
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Buttons */
-button {
-  background-color: #4caf50; /* Green */
+/* --------- NAVBAR --------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #4caf50;
   color: white;
-  border: none;
-  padding: 12px 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d0f0dc;
+}
+
+/* --------- HOMEPAGE --------- */
+.homepage-container {
+  text-align: center;
+  background: white;
+  padding: 60px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.homepage-container h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 16px;
+}
+
+.homepage-container h2 {
+  font-size: 1.6rem;
+  color: #444;
+  margin: 24px 0 16px;
+}
+
+/* --------- BUTTONS --------- */
+button {
+  padding: 14px 26px;
   font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
   margin: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 button:hover {
-  background-color: #388e3c; /* Darker green */
+  background-color: #388e3c;
   transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 button:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: scale(0.97);
 }
 
-/* File Input */
-input[type="file"] {
-  display: block;
-  margin: 20px auto;
-  padding: 10px;
-  border: 2px dashed #4caf50; /* Green border */
-  border-radius: 10px;
-  background-color: #fff;
+/* --------- FOOTER --------- */
+.footer {
+  background-color: #f0f0f0;
   text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
+
+/* --------- INPUT FILE --------- */
+input[type="file"] {
+  margin: 12px 0;
+  padding: 10px;
   font-size: 1rem;
-  color: #4caf50; /* Green text */
+  border: 2px dashed #4caf50;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #4caf50;
   cursor: pointer;
+  text-align: center;
   transition: all 0.3s ease;
 }
 
 input[type="file"]:hover {
-  background-color: #e8f5e9; /* Light green hover */
-  border-color: #388e3c; /* Darker green */
+  background-color: #e8f5e9;
+  border-color: #388e3c;
 }
 
-/* Results Section */
+/* --------- RESULT DISPLAY --------- */
 pre {
-  background-color: #fff;
-  padding: 20px;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 12px;
+  padding: 16px;
+  background-color: #fefefe;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow-x: auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #333;
-  margin-top: 20px;
 }
 
-/* Centrer le contenu de la page d'accueil */
-.homepage-container {
-  display: flex;
-  flex-direction: column; /* Empile les éléments verticalement */
-  justify-content: center; /* Centre verticalement */
-  align-items: center; /* Centre horizontalement */
-  height: 100vh; /* Hauteur de la fenêtre */
-  text-align: center; /* Centre le texte */
-  padding: 20px; /* Ajoute un peu de marge intérieure */
-}
-
-.homepage-container h1 {
-  font-size: 2.5rem; /* Taille du texte */
-  color: #2e7d32; /* Vert foncé */
-  margin-bottom: 20px; /* Espace entre le titre et le tableau de bord */
-}
-
-/* Centrer le contenu du tableau de bord */
-.dashboard-container {
-  display: flex;
-  flex-direction: column; /* Empile les éléments verticalement */
-  justify-content: center; /* Centre verticalement */
-  align-items: center; /* Centre horizontalement */
-  height: 100vh; /* Hauteur de la fenêtre */
-  text-align: center; /* Centre le texte */
-}
-
-.dashboard-container h1 {
-  margin-bottom: 20px; /* Espace entre le titre et les boutons */
-  font-size: 2rem;
-  color: #2e7d32; /* Vert foncé */
-}
-
-.dashboard-container button {
-  background-color: #4caf50; /* Vert */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px; /* Espace entre les boutons */
-  transition: all 0.3s ease;
-}
-
-.dashboard-container button:hover {
-  background-color: #388e3c; /* Vert plus foncé */
-}
-
-
-/* Centrer le contenu du téléverseur */
-.file-uploader-container {
-  display: flex;
-  flex-direction: column; /* Empile les éléments verticalement */
-  justify-content: center; /* Centre verticalement */
-  align-items: center; /* Centre horizontalement */
-  height: 100vh; /* Hauteur de la fenêtre */
-  text-align: center; /* Centre le texte */
-}
-
-.file-uploader-container button {
-  background-color: #4caf50; /* Vert */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px; /* Espace entre le champ de fichier et le bouton */
-  transition: all 0.3s ease;
-}
-
-.file-uploader-container button:hover {
-  background-color: #388e3c; /* Vert plus foncé */
-}
-
-/* Section Margins */
-.section {
-  margin-bottom: 40px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
+/* --------- RESPONSIVE DESIGN --------- */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+  .navbar-title {
+    font-size: 1.2rem;
   }
 
   button {
@@ -192,67 +169,19 @@ pre {
     font-size: 0.9rem;
   }
 
-  .container {
-    padding: 15px;
+  .homepage-container {
+    padding: 40px 16px;
   }
 }
 
-/* Layout global */
-.app-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Assure que le layout occupe toute la hauteur de la fenêtre */
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between; /* Espace entre les éléments */
-  align-items: center; /* Centre verticalement */
-  background-color: #4caf50; /* Vert */
-  color: white;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative; /* Nécessaire pour positionner le titre */
-}
-
-/* Logo */
-.navbar .logo {
-  height: 40px; /* Taille du logo */
-}
-
-/* Navbar Title */
-.navbar-title {
-  position: absolute; /* Position absolue pour centrer */
-  left: 50%; /* Centre horizontalement */
-  transform: translateX(-50%); /* Ajuste pour centrer parfaitement */
-  font-size: 1.5rem; /* Taille du texte */
-  font-weight: bold; /* Texte en gras */
-  text-transform: uppercase; /* Texte en majuscules */
-  letter-spacing: 1px; /* Espacement entre les lettres */
-  color: white; /* Couleur du texte */
-  margin: 0;
-}
-
-/* Navigation Links */
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #d1e8ff; /* Couleur plus claire au survol */
+/* --------- ANIMATIONS --------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
