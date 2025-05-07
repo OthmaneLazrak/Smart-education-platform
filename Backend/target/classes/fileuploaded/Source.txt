@@ -1,0 +1,5 @@
+nom,prenom,sexe,ville,salaire
+Durand,Marie,F,Fes,35000
+Martin,Jean,M,Paris,45000
+Dupont,Sophie,F,Casablanca,55000
+Lemoine,Paul,M,Paris,39000

@@ -1,0 +1,6 @@
+{
+  "filename": "Source.txt",
+  "mime_type": "text/plain",
+  "status": "success",
+  "text": "nom,prenom,sexe,ville,salaire\nDurand,Marie,F,Fes,35000\nMartin,Jean,M,Paris,45000\nDupont,Sophie,F,Casablanca,55000\nLemoine,Paul,M,Paris,39000"
+}

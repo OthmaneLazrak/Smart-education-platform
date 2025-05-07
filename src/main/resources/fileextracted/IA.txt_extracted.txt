@@ -1,0 +1,6 @@
+{
+  "filename": "IA.txt",
+  "mime_type": "text/plain",
+  "status": "success",
+  "text": "L'intelligence artificielle (IA) est un domaine de l'informatique qui vise \u00e0 cr\u00e9er des syst\u00e8mes capables de r\u00e9aliser des t\u00e2ches qui, normalement, n\u00e9cessiteraient l'intelligence humaine. Ces t\u00e2ches incluent notamment :\n\nL'apprentissage (machine learning, deep learning)\n\nLe raisonnement (r\u00e9solution de probl\u00e8mes, prise de d\u00e9cision)\n\nLa perception (vision par ordinateur, reconnaissance vocale)\n\nLa compr\u00e9hension du langage (traitement du langage naturel, chatbots)\n\nL'interaction (robots, assistants virtuels)\n\nL'IA peut \u00eatre faible (ou \u00e9troite), c'est-\u00e0-dire sp\u00e9cialis\u00e9e dans une t\u00e2che pr\u00e9cise (comme les recommandations d'Amazon ou la reconnaissance faciale), ou forte (th\u00e9orique), c'est-\u00e0-dire capable de raisonner comme un humain sur n'importe quel sujet (ce qui n'existe pas encore).\n\nAujourd'hui, l'IA est utilis\u00e9e dans de nombreux domaines : sant\u00e9, finance, transports, jeux vid\u00e9o, etc."
+}

@@ -34,10 +34,14 @@ public class UploadedFileController {
 
     // Endpoint pour uploader un fichier
     @PostMapping("/upload")
-    public ResponseEntity<UploadedFile> uploadFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<?> uploadFile(@RequestParam("file") MultipartFile file) {
         try {
+            if (file == null || file.isEmpty()) {
+                return ResponseEntity.badRequest().body("Fichier invalide ou vide.");
+            }
+
             // Sauvegarder le fichier dans le répertoire fileuploaded
-            saveFileToDirectory(file, "src/main/resources/fileuploaded");
+            saveFileToDirectory(file, "fileuploaded");
 
             // Créer une entité UploadedFile
             UploadedFile uploadedFile = new UploadedFile();
@@ -49,16 +53,21 @@ public class UploadedFileController {
             UploadedFile savedFile = uploadedFileRepository.save(uploadedFile);
             return ResponseEntity.ok(savedFile);
         } catch (Exception e) {
-            return ResponseEntity.status(500).body(null);
+            e.printStackTrace();
+            return ResponseEntity.status(500).body("Erreur lors de l'upload : " + e.getMessage());
         }
     }
 
     // Endpoint pour uploader un fichier et extraire son contenu
     @PostMapping("/extract")
-    public ResponseEntity<String> uploadAndExtractFile(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<?> uploadAndExtractFile(@RequestParam("file") MultipartFile file) {
         try {
+            if (file == null || file.isEmpty()) {
+                return ResponseEntity.badRequest().body("Fichier invalide ou vide.");
+            }
+
             // Sauvegarder le fichier dans le répertoire fileuploaded
-            saveFileToDirectory(file, "src/main/resources/fileuploaded");
+            saveFileToDirectory(file, "fileuploaded");
 
             // Créer et sauvegarder l'entité UploadedFile
             UploadedFile uploadedFile = new UploadedFile();
@@ -75,24 +84,28 @@ public class UploadedFileController {
 
             return ResponseEntity.ok("Texte extrait et sauvegardé avec succès.");
         } catch (Exception e) {
+            e.printStackTrace();
             return ResponseEntity.status(500).body("Erreur lors de l'extraction : " + e.getMessage());
         }
     }
 
     // Méthode pour sauvegarder un fichier dans un répertoire
-    private void saveFileToDirectory(MultipartFile file, String directoryPath) throws IOException {
-        Path directory = Paths.get(directoryPath);
+    private void saveFileToDirectory(MultipartFile file, String directoryName) throws IOException {
+        // Obtenir le chemin absolu du répertoire
+        Path directory = Paths.get(System.getProperty("user.dir"), "src/main/resources", directoryName);
         if (!Files.exists(directory)) {
             Files.createDirectories(directory); // Créer le répertoire s'il n'existe pas
         }
 
         Path filePath = directory.resolve(file.getOriginalFilename());
         Files.write(filePath, file.getBytes());
+        System.out.println("Fichier sauvegardé dans : " + filePath.toAbsolutePath());
     }
 
     // Méthode pour sauvegarder le texte extrait dans un fichier
     private void saveExtractedTextToFile(String originalFileName, String extractedText) throws IOException {
-        Path directoryPath = Paths.get("src/main/resources/fileextracted");
+        // Obtenir le chemin absolu du répertoire
+        Path directoryPath = Paths.get(System.getProperty("user.dir"), "src/main/resources", "fileextracted");
         if (!Files.exists(directoryPath)) {
             Files.createDirectories(directoryPath); // Créer le répertoire s'il n'existe pas
         }
@@ -101,5 +114,6 @@ public class UploadedFileController {
         Path filePath = directoryPath.resolve(fileName);
 
         Files.write(filePath, extractedText.getBytes());
+        System.out.println("Texte extrait sauvegardé dans : " + filePath.toAbsolutePath());
     }
 }

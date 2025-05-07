@@ -1,0 +1,6 @@
+{
+  "filename": "zakwa3er.txt",
+  "mime_type": "text/plain",
+  "status": "success",
+  "text": "zak khari f pes"
+}
