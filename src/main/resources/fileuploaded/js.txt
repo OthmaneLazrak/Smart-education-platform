@@ -1,0 +1,67 @@
+arrays: (meme chose pour les chaînes de caractères )
+
+**splice**:
+nomtab.splice(1- indice start pour supprimer , 2- nombre d'éléments à supprimer, 3- dans ce paramètre on peut ajouter à la place de ce qu'on a supprimé)
+syntaxe splice ( start , count , add )
+=> elle permet soit de supprimer ou de modifier ou d'ajouter un element du tableau .
+
+**slice**
+slice(start , end non inclus )
+=> elle permet de couper ou copier une partie du tableau
+
+**indexOf**
+indexOf (numéro d'indice à rechercher dans le tableau)
+=>elle permet de rechercher le numéro d'élément du tableau .
+
+**reverse**
+=>elle permet de renverser un tableau
+
+**sort** 
+=>elle permet de classer le tableau par ordre croissant par défaut.
+
+**concat**
+nomtab1.concat(nomtab2)
+=>elle permet de concatener deux tableaux
+
+**join**
+=> elle permet de rendre un type de tableau sous forme de chaine de caractères .
+
+
+Function:
+
+=> quand on declare une fonction normal on peut l appeler n'importe où dans le code par contre si on met une fonction dans une variable il faut absolument appeler la fonction apres la declaration de la fonction .
+
+=> quand on ne sait pas le nombre de parametre qu on va appliquer dans une fonction il suffit juste de declarer une fonction de cette façon :
+function nom( ...parametre){}
+
+
+****ArrowFunction : 
+
+si tu as une seul ligne dans le code de la fonction il suffit d'utiliser :
+exemple : let x = () => 1; (ça veut dire que cette fonction retourne 1)
+sinon on peut utiliser :
+exemple : let x = () => { 
+let y;
+return 1; }
+
+
+DOM:
+documetn.getElementById('id');
+document.getElementsByClass('');	
+document.getElementsByTagName('h1') //tagname : h1,p,img
+document.querySelector('.h1'); // '.': pour les tagname, '#' : pour les id 
+
+CREATE ELEMENT:
+document.createElement('exemple: h1,img,a,');
+Elementcrée.appendChild(Elemennt créé)
+document.createTextNode('Texte que tu veux ajouter');
+
+
+
+EVENTS:
+onmouseover= il suffit de passer sur le bouton et non cliquer dessus 
+onmouseout = si tu es dans le bouton il ne se passe rien mais il suffit juste deplacer le curseur en dehors du bouton l'effet de clique démarre 
+onmousemove = si tu te deplace dans le bouton automatique l effet de clique se demarre
+onfocus = en cliquant l'effet se demare;
+onblur = en cliquant ailleur l effet demare
+

@@ -1,0 +1,6 @@
+{
+  "filename": "TD2_-_GP.docx",
+  "message": "Seuls les fichiers PDF et TXT sont accept\u00e9s",
+  "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "status": "unsupported"
+}

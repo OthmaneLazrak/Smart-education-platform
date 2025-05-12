@@ -1,0 +1,6 @@
+1-fait la traduction entre le code et la base de donnée
+2-
+3-Code First, Database First
+4- .Code First : quand on génère les tables à partie des classes
+   .Database First : quand on crée les classe à partir des tables
+5- scaffold : permet de créer les classe à partir de la base de donnée

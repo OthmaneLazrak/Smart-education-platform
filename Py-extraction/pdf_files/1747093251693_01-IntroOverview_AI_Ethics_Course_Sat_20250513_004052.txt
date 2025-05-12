@@ -1,0 +1,364 @@
+Introduction a 
+l’intelligence artificielle
+-Introduction et Fondements -
+UNITÉ. 01:Introduction et Ethiques de l’Intelligence Artificielle 
+(Automne 2024)
+Dr. Ghezlane Halhoul Merabet 
+
+plan de la S ÉANCE
+Introduction au CoursIntroduction a l ’Intelligence 
+Artificielle01. 02.Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet1. Information et Attentes du Cours
+2. Outils Pédagogiques 
+3. Ressources: E -Books
+4. Contenu du Cours (Syllabus) 1. Définitions et Concepts Clés
+2. Types de l’Intelligence Artificielle
+3. Type d’Apprentissage en IA
+4. Les Outils de l’IA
+2 30/11/2024  
+
+Introduction au cours01.
+Plan du Cours et Expectations …Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+3
+ 30/11/2024  
+Qui est votre enseignant?Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+4Enseignant 
+responsable:Ghezlane Halhoul Merabet
+● Fulbright Scholar
+● Doctorat en Informatique
+Domaines d ’expertise: Intelligence Artificielle et Machine Learning, Technologies 
+Immersives (AR/VR) et Innovation Numérique, Systèmes 
+Multi -Agents et IoT, Smart Cities et Technologies Urbaines
+Contact: G.Halhoulmerabet@emsi.ma
+heures de DISPONILIT É:Sur rendez -vous (via Teams/Zoom)
+30/11/2024  
+Description et Objectives du Cours
+Architecture du Cours.
+Objectives du Cours.Module : Introduction et Éthique de l’Intelligence Artificielle
+Format : Sessions hebdomadaires (1h30)
+Approche : Apprentissage hybride (théorie + applications pratiques + réflexion 
+éthique)
+Ce cours fondamental propose une exploration approfondie de l' Intelligence Artificielle ,abordant 
+à la fois ses aspects techniques et ses implications éthiques . Il vise à développer chez vous une 
+compréhension critique et équilibrée de l'IA, de ses applications actuelles et de ses enjeux 
+sociétaux .Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+5
+ 30/11/2024  
+Outils P ÉDAGOGIQUES
+02Travaux de 
+Groupe en Classe01Sessions 
+Théoriques & 
+Interactives
+04
+Exercices et 
+Activités Pratiques
+03Discussions 
+Plénières Ces sessions favorisent l'échange 
+d'idées et la construction d'une 
+compréhension commune des 
+enjeux complexes de l'IA.Ces activités pratiques 
+renforcent votre 
+apprentissage et développent 
+vos compétences d'analyse et 
+d'application.Ces sessions structurées 
+permettent d'acquérir les 
+connaissances essentielles tout en 
+favorisant l'interaction et la 
+réflexion critique.
+L'apprentissage collaboratif 
+vous permet de développer 
+une compréhension plus 
+profonde à travers l'échange et 
+la pratique.Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+6
+ 30/11/2024  
+Ressources : e-Books*Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+7* Tous les livres sont disponibles dans le dossier Course Drive .Stuart J. Russell and Peter 
+Norvig (2022), Artificial 
+Intelligence: A Modern 
+Approach. (4thEds.)
+S. Mathew Liao (2020), Ethics 
+of Artificial Intelligence.
+(1stEds.)
+Ian Goodfellow, Yoshua 
+Bengio &Aaron Courville 
+(2016), Deep Learning. 
+(1stEds.)
+Aurélien Géron (2022), 
+Hands -On Machine Learning 
+with Scikit -Learn, Keras , and 
+TensorFlow: Concepts, Tools, 
+and Techniques to Build 
+Intelligent Systems. (2ndEds.)
+30/11/2024  
+Contenu du cours#1Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+8Sem.# Thématiques & Description des Chapitres
+01Introduction à l’Intelligence Artificielle: Définition de l’IA, Histoire et origines de l’IA, Les grandes 
+avancées et les tendances actuelles.
+02Applications de l’IA: Secteurs d'application : santé, finance, transport, marketing, etc., Exemples 
+d'application de l'IA dans la vie quotidienne, Impacts positifs de l'IA sur la société et l'économie.
+03 & 04Outils de l’IA: Prompt, GIT HUB COPILOT ( vscode , Intellij ), AI rédaction, Autre…
+05 & 06Machine Learning: Concepts de base, Types d'apprentissage (supervisé, non supervisé, renforcement), 
+Algorithme (régression linéaire, KNN, RF, etc…)
+07Les Méthodes de résolution de problème: Les heuristiques –métaheuristiques.
+08 & 09Introduction au Deep Learning: Réseaux de neurones artificiels : structure et fonctionnement, 
+Traitement du langage naturel (NLP), Vision par ordinateur (Computer Vision), Utilisation des modèles pré -
+entrainés en inférence 
+11Dangers de l’IA: DeepFakes , Utilisation des données personnelles, Les attaques contre les modèles IA, 
+Biais (L’IA biaisée), Perte des emplois, Fuite des données, Data leakage Samsung, Singularité, Dépendance 
+de l’humain a l’IA, Etc…
+30/11/2024  
+Contenu du cours#2Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+9Sem.# Thématiques & Description des Chapitres
+12-14Éthiques de l’IA: Les théories morales, Gouvernance et attributions de responsabilité dans le 
+développement de l’IA, Bulles épistémiques et chambres d’écho, Les critères d'explicabilité et de 
+transparence, L'intelligence artificielle et l'industrie du doute, Intelligence artificielle et autonomie des 
+agents
+15Réglementation générale sur la protection des données (RGPD): Présentation du RGPD (origines, 
+objectifs et champs d'application), Vie privée et sécurité des données (enjeux liés à la collecte et à 
+l'utilisation des données), Principes clés du RGPD (transparence, limitation des finalités, minimisation des 
+données, exactitude, limitation de la conservation, intégrité et confidentialité), Droits des individus en vertu 
+du RGPD (accès, rectification, effacement, portabilité, opposition), Responsabilités des organisations 
+(obligations des responsables du traitement et des sous -traitants, obligations en matière de sécurité des 
+données), Conséquences de la non -conformité au RGPD (sanctions et amendes possibles).
+oLes détails concernant les projets et les devoirs seront communiqués en ligne.
+oLes dates des tests et des examens seront annoncées par courrier électronique ou à la fin du cours.
+oLes lectures assignées seront partagées dans le dossier du cours à la fin du chapitre.  
+30/11/2024  
+cENTREPRENEURSQu'attendez -vous de 
+ce cours ?
+Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+10
+ 30/11/2024  
+l’Intelligence Artificielle
+Définitions, Concepts Clés, 
+Applications …02.Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+11
+ 30/11/2024  
+Questions d ’amorce
+Que pensez -vous quand j'évoque l'Intelligence Artificielle ? 01.
+02.
+03.Comment l'Intelligence Artificielle est -elledéjà présente 
+dans votre quotidien ?
+Selon vous, quelle est la différence entre l'intelligence 
+humaine et l'intelligence artificielle ?Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+12
+ 30/11/2024  
+L'Intelligence : Une CAPACIT ÉMulti -dimensionnelleUnité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+13L'IntelligenceAcquisition de Connaissances
+•Apprentissage
+•Mémorisation
+Traitement d'Information
+•Analyse
+•Compréhension
+Communication
+•Expression
+•Interaction
+Adaptation
+•Flexibilité
+•Résolution de problèmesIntelligence
+: c’est la capacité à comprendre , apprendre , et 
+s'adapter à de nouvelles situations en utilisant ses 
+connaissances et expériences pour résoudre des 
+problèmes.
+L'Intelligence est une capacité complexe.
+Les humains peuvent :
+✓Apprendre de leurs expériences
+✓S’adapter à de nouvelles situations
+✓Résoudre des problèmes
+✓Communiquer et comprendre
+✓Raisonner et décider
+Structure de l'Intelligence
+30/11/2024  
+Qu'est -ce que l'Intelligence Artificielle ?Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+14L’Intelligence artificielle
+: c’est la création de programmes informatiques capables de réaliser des tâches qui, accomplies par un 
+humain, nécessiteraient de l'intelligence .
+Perspectives Différentes:
+Industrielle:
+o IBM : «Systèmes qui apprennent et s’adaptent »
+o Google : «Résolution de problèmes complexes »
+ACADÉMIQUE:
+o McCarthy (1956): «Science des machines intelligentes »
+o Minsky: «Faire faire aux machines des tâches complexes »
+30/11/2024  
+Types d'Intelligence Artificielle : Une Vue d'Ensemble#1Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+15IA Faible (ANI -Artificial Narrow Intelligence)
+Concept
+o IA spécialisée dans une tâche spécifique.
+o Performance souvent supérieure à l'humain dans son domaine.
+o Pas de généralisation à d'autres tâches
+Cas d’études:
+ChatGPT
+oCapacité : Traitement du langage naturel
+oApplications : Rédaction, réponses aux questions
+oLimites : Pas de vraie compréhensionAlphaGo
+oCapacité : Jeu de Go*
+oPerformance : Victoire contre champions
+oLimite : Uniquement le jeu de Go
+* Le Goest un jeu de stratégie ancestral d'origine chinoise où deux joueurs placent des pierres noires et blanches sur un plateau qu adrillé pour capturer 
+du territoire et les pierres adverses.
+30/11/2024  
+Types d'Intelligence Artificielle : Une Vue d'Ensemble#2Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+16IA Générale (AGI -Artificial General Intelligence)
+CAPACIT ÉS RECHERCH ÉES :
+1. Apprentissage Autonome:
+-Apprendre sans programmation spécifique
+-S'adapter à de nouvelles situations
+-Transférer les connaissances
+2. Raisonnement Général:
+-Résoudre des problèmes inédits
+-Comprendre des concepts abstraits
+-Faire des liens entre différents domaines
+3. Conscience Contextuelle:
+-Comprendre l'environnement
+-Adapter ses réponses au contexte
+-Interagir naturellement
+30/11/2024  
+Comment fonctionne l ’IA ?Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+17Les Trois Piliers de l’IA 
+Données Algorithmes Puissance de Calcul
+•La nourriture de l’IA
+•Exemples et 
+informations
+•Base 
+d’apprentissage•Les recettes de l’IA
+•Instructions et 
+règles
+•Méthodes 
+d’apprentissage•Le cerveau de l’IA
+•Traitement des 
+données
+•Exécution des 
+algorithmes
+Entrée: Photo SortieC’est un 
+Chat !!
+Traitement : 
+Analyse des 
+patternsExample:
+30/11/2024  
+Types d'Apprentissage en IA#1Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+181. Apprentissage Supervisé (Apprendre avec un professeur)
+principe
+o L'IA apprend à partir d'exemples étiquetés
+o Comme un élève qui apprend avec des exercices corrigés
+Exemple Concret : Filtrage des Emails
+Email Analyse Spam/Non -
+Spam 
+Applications Courantes :
+oReconnaissance d'images
+oPrédiction de prix
+oClassification de textes
+DONNÉES D'ENTRA ÎNEMENT :
+oEmails étiquetés ‘spam’ ou ‘non spam’
+oCaractéristiques identifiées
+oPatterns appris
+30/11/2024  
+Types d'Apprentissage en IA#2Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+192. Apprentissage Non -Supervisé (Découvrir des patterns par soi -même)
+principe
+o L'IA trouve des structures dans les données
+o Comme trier des fruits par ressemblance sans connaître 
+leurs noms
+Exemple Concret : Segmentation ClientsApplications Courantes :
+oSegmentation de marché
+oDétection d'anomalies
+oRegroupement de contenus
+Données 
+Clients   AnalyseGroupes 
+Similaires
+Processus :
+oAnalyse des comportements
+oIdentification de groups
+oDécouverte de patterns
+30/11/2024  
+Types d'Apprentissage en IA#3Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+203. Apprentissage par Renforcement (Apprendre par essai -erreur)
+principe
+o L'IA apprend de ses expériences
+o Comme apprendre à jouer à un jeu vidéo
+Exemple Concret : Robot ApprenantApplications Courantes :
+oJeux vidéo
+oRobots
+oSystèmes de navigation
+Action 
+du RobotInteraction avec 
+l'EnvironnementSystème de 
+RécompenseMÉCANISME :
+oEssai d'actions
+oObservation des résultats
+oAjustement stratégique
+30/11/2024  
+Les Outils IA –RÉCAPITULATIF et Pratique#1Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+21▪Développement et Programmation | Outils de Code  
+oGitHub Copilot : Assistant de code intelligent
+oVS Code/ IntelliJ : Environnements augmentés par l’IA
+oTabnine : Complétion de code
+Use Cases:
+✓Génération de code
+✓Suggestions en temps réel
+✓Documentation automatique
+▪Création de Contenu | Rédaction et Texte 
+oChatGPT : Assistant polyvalent
+oClaude ai : Analyses approfondies
+oJasper : Contenu marketing
+Use Cases:
+✓Rédaction d'articles
+✓Analyses de texte
+✓Traduction
+30/11/2024  
+Les Outils IA –RÉCAPITULATIF et Pratique#2Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+22▪Création Visuelle | Image et Design 
+oDALL -E : Génération d'images
+oMidjourney : Art et design
+oCanva + IA : Design graphique
+Use Cases:
+✓Illustrations
+✓Maquettes
+✓Édition d'images
+▪Productivité | Optimisation du Travail 
+oNotion AI : Notes et organisation
+oGrammarly : Correction et style
+oOtter.ai : Transcription
+Use Cases:
+✓Organisation
+✓Correction
+✓Transcription
+30/11/2024  
+ACTIVIT É: RÉSOLUTION de PROBL ÈMES avec l ’IA#1Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+23SCÉNARIO -01: Start -up Marketing
+Vous devez créer une campagne marketing pour un 
+nouveau produit tech :
+● Contenu à créer
+● Visuels nécessaires
+● Documentation techniqueSCÉNARIO -02: Projet D ÉVELOPPEMENT
+Développement d'une application mobile de gestion 
+de temps :
+● Code à générer
+● Interface à designer
+● Documentation à rédiger
+SCÉNARIO -03: Contenu Éducatif
+Création d'un cours en ligne surles nouvelles 
+technologies :
+● Matériel pédagogique
+● Supports visuels
+● Exercices pratiquesTâches par Groupe (3 à 4 étudiants) :
+1. Identifier les besoins
+2. Sélectionner les outils appropriés
+3. Justifier les choix
+4. Présenter la stratégie
+30/11/2024  
+RÉFÉRENCES & Ressources COMPL ÉMENTAIRES
+Cours en ligne (MOOC):
+● Coursera:  «AI For Everyone » -Andrew Ng. Lien: https://www.coursera.org/learn/ai -for-everyone
+● Elements of AI (elementsofai.com )
+● Google AI Education (google.ai /education )
+Plateformes d'Apprentissage IA:
+● Kaggle (kaggle.com )
+● HuggingFace (huggingface.co )
+● Papers With Code (paperswithcode.com )
+Documentation des Outils :
+● GitHub Copilot (docs.github.com /copilot )
+● OpenAI (platform.openai.com /docs )
+● Google AI (ai.google /education )Unité 01  |  Introduction et Ethiques de l’IA  |  G. H. Merabet
+24
+ 30/11/2024

@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+/*@Entity
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Choice {
     @Id
@@ -17,4 +17,4 @@ public class Choice {
     private Long userId; // Référence à l'utilisateur
     private Long uploadedFileId; // Référence au fichier source
     private String choiceType; // "QUIZ", "SUMMARY", "PROBLEM"
-}
+}*/

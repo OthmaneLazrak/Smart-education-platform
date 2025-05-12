@@ -1,37 +1,36 @@
 import React, { useState } from 'react';
 import FileUploader from '../components/FileUploader';
 import Result from '../components/Result';
-import { uploadFile } from '../services/apiService';
+import axios from 'axios';
+
 
 const QuizPage = () => {
-    const [result, setResult] = useState(null);
+    const [quiz, setQuiz] = useState(null);
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleFileUpload = async (file) => {
-        // Validation du fichier
-        if (!file) {
-            setError("Veuillez sélectionner un fichier valide.");
-            return;
-        }
-
-        // Vérification du type MIME (optionnel)
-        const validMimeTypes = ['application/pdf', 'text/plain', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-        if (!validMimeTypes.includes(file.type)) {
-            setError("Type de fichier non supporté. Veuillez sélectionner un fichier PDF, TXT ou DOCX.");
-            return;
-        }
-
-        setIsLoading(true);
-        setError(null);
-        setResult(null);
-
+    const handleFileSuccess = async (extractedText) => {
         try {
-            const data = await uploadFile(file, 'quizes/generate');
-            setResult(data);
-        } catch (error) {
-            setError(error.response?.data?.message || "Échec de la génération du quiz. Veuillez réessayer.");
-            console.error('Erreur backend:', error.response?.data || error);
+            setIsLoading(true);
+            setError(null);
+
+            // Formatage correct des données pour le backend
+            const quizRequest = {
+                content: typeof extractedText === 'object' ? extractedText.text : extractedText,
+                title: "Quiz à générer",
+                createdAt: new Date()
+            };
+
+            const response = await axios.post('http://localhost:8080/api/quizzes/generate', quizRequest, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            setQuiz(response.data);
+        } catch (err) {
+            console.error("Erreur détaillée:", err.response?.data);
+            setError(err.response?.data || "Erreur lors de la génération du quiz");
         } finally {
             setIsLoading(false);
         }
@@ -39,17 +38,37 @@ const QuizPage = () => {
 
     return (
         <div className="quiz-page">
-            <h1>Générer un Quiz</h1>
+            <h1>Générateur de Quiz</h1>
             
-            <FileUploader 
-                onUpload={handleFileUpload} 
-                disabled={isLoading} 
-                accept=".pdf,.txt,.docx" 
+            <FileUploader
+                onSuccess={handleFileSuccess}
+                onError={(msg) => setError(msg)}
+                maxSizeMB={10}
+                apiBaseUrl="http://localhost:8080"
             />
-            
-            {isLoading && <p className="loading-message">Génération du quiz en cours...</p>}
-            {error && <p className="error-message">{error}</p>}
-            {result && <Result data={result} />}
+
+            {isLoading && (
+                <div className="loading">
+                    <p>Génération du quiz en cours...</p>
+                </div>
+            )}
+
+            {error && (
+                <div className="error-message">
+                    {error}
+                </div>
+            )}
+
+            {quiz && (
+                <div className="quiz-result">
+                    <h2>{quiz.title}</h2>
+                    <div className="quiz-content">
+                        {quiz.content.split('\n').map((line, i) => (
+                            <p key={i}>{line}</p>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

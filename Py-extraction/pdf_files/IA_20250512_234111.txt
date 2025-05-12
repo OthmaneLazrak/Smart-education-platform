@@ -1,0 +1,15 @@
+L'intelligence artificielle (IA) est un domaine de l'informatique qui vise à créer des systèmes capables de réaliser des tâches qui, normalement, nécessiteraient l'intelligence humaine. Ces tâches incluent notamment :
+
+L'apprentissage (machine learning, deep learning)
+
+Le raisonnement (résolution de problèmes, prise de décision)
+
+La perception (vision par ordinateur, reconnaissance vocale)
+
+La compréhension du langage (traitement du langage naturel, chatbots)
+
+L'interaction (robots, assistants virtuels)
+
+L'IA peut être faible (ou étroite), c'est-à-dire spécialisée dans une tâche précise (comme les recommandations d'Amazon ou la reconnaissance faciale), ou forte (théorique), c'est-à-dire capable de raisonner comme un humain sur n'importe quel sujet (ce qui n'existe pas encore).
+
+Aujourd'hui, l'IA est utilisée dans de nombreux domaines : santé, finance, transports, jeux vidéo, etc.

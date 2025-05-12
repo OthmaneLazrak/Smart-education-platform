@@ -185,3 +185,58 @@ pre {
     transform: translateY(0);
   }
 }
+/* --------- QUIZ PAGE STYLES --------- */
+.quiz-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.quiz-content {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.quiz-text {
+    white-space: pre-line;
+    line-height: 1.8;
+    color: #333;
+}
+
+.quiz-text p {
+    margin: 12px 0;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #4caf50;
+}
+
+.loading-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+}
+
+.loading-message {
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.error-message {
+    color: #dc3545;
+    padding: 12px;
+    margin: 12px 0;
+    background-color: #fef2f2;
+    border-radius: 8px;
+    border: 1px solid #fecaca;
+}

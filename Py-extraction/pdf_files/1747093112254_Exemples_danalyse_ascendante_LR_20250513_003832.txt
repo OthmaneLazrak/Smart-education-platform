@@ -1,0 +1,47 @@
+14/01/2025
+COMPILATION
+EXEMPLES ANALYSE SYNTAXIQUE ASCENDANTE
+EMSI - 4ÈMEIIR
+2024/2025
+Prof. M. D. RAHMANI
+Exemples d'analyse ascendante LR
+1-Soit la grammaire:        la phrase à analyser: " id+id+id"
+E E + T |T
+T id
+2-Soit la grammaire:       la phrase à analyser: " id+id+id"
+E E + E |id 2
+Prof. M. D. RAHMANI                                      Compilation                                   EMSI 4ème année IIR   2024/25
+14/01/2025
+L'analyse ascendante LR
+1-Exemple de fonctionnement : soit la chaîne ω= "id+id+id"
+Pile Tampon Action / Opération Arbre syntaxique
+La grammaire: 
+E           E+ T | T $ id+id+id$        décalage
+T           id $id + id+id$        réduction T          id (1)                                E
+$T + id+id$        réduction E          T  (1)
+$E + id+id$        décalage E
+$E+ id +id$        décalage
+(1)conflit décalage/ $E+id + id$réduction  T          id (1)            E
+réduction $E+T + id$         réduction  E         E+T (1,2)
+$E + id$         décalage
+(2) conflit réduction/ $E+ id $décalage T           T T
+réduction $E+id $réduction T          id
+$E+T $         réduction  E         E+T (2)
+$E $ ACCEPTATION id    +    id    +    id3
+Prof. M. D. RAHMANI                                      Compilation                                   EMSI 4ème année IIR   2024/25
+L'analyse ascendante LR
+2-Exemple de fonctionnement : soit la chaîne ω= "id+id+id"
+Pile Tampon Action / Opération Arbre syntaxique
+La grammaire: 
+E           E+ E | id $ id+id+id$        décalage
+$id + id+id$        réduction E          id (1)                                E
+$E + id+id$        décalage 
+$E+ id +id$        décalage
+(1)conflit décalage/ $E+id + id$réduction  E          id (1)                  E
+réduction $E+E + id$         réduction  E         E+E (1)
+$E + id$         décalage
+(2) conflit réduction/ $E+ id $décalage E           E E
+réduction $E+id $réduction E          id
+$E+E $         réduction  E         E+E
+$E $ ACCEPTATION id    +    id    +    id4
+Prof. M. D. RAHMANI                                      Compilation                                   EMSI 4ème année IIR   2024/25

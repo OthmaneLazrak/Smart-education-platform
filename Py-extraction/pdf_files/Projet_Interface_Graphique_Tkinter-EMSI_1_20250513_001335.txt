@@ -1,0 +1,56 @@
+Dr. EL MKHALET MOUNA  
+ 
+Project  Interface  Graphique -Tkinter Python  
+Etape 1 – 
+Tout d’abord il faut s’habituer a l ‘interface graphique, comment ca se passe exactment,  
+L’environnement –Soit on travaille sur l’environnement de Spyder Anaconda ou on installe le 
+logiciel python.  
+Comment installer Pip pour Python sur Windows ?  - WayToLearnX  
+Rendez -vous sur le site et exécuter les différents code s de l’interface graphique.  
+https://waytolearnx.com/2020/07/comment -effacer -le-contenu -dun-widget-text-tkinter -
+python.html  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Dr. EL MKHALET MOUNA  
+Etape2  
+Après avoir été familiarisé  avec les différents  syntaxes de l’interface 
+graphique, on commence à créer notre interface graphique qui contient tous les 
+algorithmes  que nous avons exécuté  ce semestre.  
+ 
+Si on clique sur l’interface graphique on doit afficher les algorithmes ,   
+ 
+ 
+ 
+
+Dr. EL MKHALET MOUNA  
+ 
+Si on clique sur l’ un des algorithmes il y aura les codes que nous avons execute 
+auparavant à propos de ces lesdits algorithmes.  
+ 
+Etape 3   
+Convertir l’INTERFACE Graphique en Application exécutable .exe 
+Ça permet de l’ exécuter  facilement et rapidement  
+Héberger  l’interface graphique sur Guithub avec votre nom et prénom .  
+GitHub · Build and ship software on a single, collaborative platform · GitHub  
+ 
+Valeur Ajoutée   
+ Ajoutez le lien de téléchargement de l'application RO -EMSI à votre CV. 
+Cette démarche constitue une valeur ajoutée notable, car  elle permet au 
+recruteur d'apprécier votre sérieux et la qualité de votre travail en 
+découvrant une application graphique que vous avez conçue, disponible en 
+téléchargement sur GitHub pendant la phase de votre cursus scolaire en 
+premier Semestre de la qua trième Année.  
+ Trois points supplémentaires seront accordés lors de l'examen final aux 
+étudiants qui réaliseront cette application."  
+ 
+Remarque.   
+Veuillez utiliser des couleurs distinctes pour vos interfaces graphiques Tkinter. 
+Chaque étudiant est invité à adopter une approche originale et personnalisée 
+pour présenter les algorithmes.

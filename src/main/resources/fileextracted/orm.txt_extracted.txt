@@ -1,0 +1,7 @@
+{
+  "filename": "orm.txt",
+  "mime_type": "text/plain",
+  "saved_text_path": "pdf_files\\orm_20250513_001808.txt",
+  "status": "success",
+  "text": "1-fait la traduction entre le code et la base de donn\u00e9e\n2-\n3-Code First, Database First\n4- .Code First : quand on g\u00e9n\u00e8re les tables \u00e0 partie des classes\n   .Database First : quand on cr\u00e9e les classe \u00e0 partir des tables\n5- scaffold : permet de cr\u00e9er les classe \u00e0 partir de la base de donn\u00e9e"
+}

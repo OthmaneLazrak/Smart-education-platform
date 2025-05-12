@@ -1,13 +1,11 @@
 package com.educ_pltaform.controller;
 
-import com.educ_pltaform.entity.Choice;
-import com.educ_pltaform.repository.ChoiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+/*@RestController
 @RequestMapping("/api/choices")
 @CrossOrigin(origins = "http://localhost:3000")
 public class ChoiceController {
@@ -24,4 +22,4 @@ public class ChoiceController {
     public Choice createChoice(@RequestBody Choice choice) {
         return choiceRepository.save(choice);
     }
-}
+}*/

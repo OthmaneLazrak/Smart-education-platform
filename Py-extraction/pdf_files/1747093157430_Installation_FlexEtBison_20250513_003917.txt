@@ -1,0 +1,49 @@
+Installation des langages C/C++, Flex et Bison 
+ 
+1. Site d'installation des Compilateurs C et C++ : https://jmeubank.github.io/tdm-gcc/   
+Vous aurez la fenêtre suivante :  
+ 
+Choisissez la version 32 bits ou 64 bits en fonction de votre machine. 
+Lancez l'exécutable :  
+ 
+Appuyez sur Create, vous aurez la fenêtre suivante et vous choisissez la version de votre machine 32 
+ou 64 bits.  
+
+ 
+Puis next. Il propose un répertoire pour l'installation, 
+ 
+Puis next et c'est bon.  
+ 
+
+ 
+Pour le test, ouvrez l'invite de commandes avec  cmd et tapez gcc, si vous avez le message ci-dessous, 
+c'est bon. 
+ 
+ 
+2-Site d'installation :  https://sourceforge.net/projects/winflexbison/   
+ 
+ 
+ 
+Créez un répertoire dans le disque C et télécharger dans ce répertoire le fichier compressé.  
+
+Quand vous le décompresser, vous aurez un contenu comme ci-dessous : 
+ 
+Après il faut donner le chemin du répertoire qui contient vos logiciels Flex et Bison :  
+                                                             
+ 
+ 
+ 
+
+Puis path et modifier 
+ 
+Ajouter le chemin du répertoire :  
+ 
+ 
+
+ 
+ 
+Avec cmd dans la fenêtre de recherche, vous aurez l'invite du dos et vous tapez comme ci-dessous 
+ 
+Quand vous sortez avec Ctrl C, vous aurez les messages d'en haut. 
+Remarque :  L'écriture des codes Flex et Bison se font avec un éditeur comme NotePad++  ou 
+Sublime Text ...

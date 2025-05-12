@@ -1,12 +1,23 @@
 import React from 'react';
 
-const Results = ({ data }) => {
+const Result = ({ data }) => {
+    console.log("Données reçues dans Result:", data);
+
+    if (!data) {
+        return <p>Aucun résultat à afficher</p>;
+    }
+
     return (
-        <div>
-            <h2>Résultats :</h2>
-            <pre>{JSON.stringify(data, null, 2)}</pre>
+        <div className="quiz-result">
+            <h2>{data.title || "Quiz généré"}</h2>
+            <pre className="quiz-content">
+                {data.content}
+            </pre>
         </div>
     );
 };
 
-export default Results;
+
+
+
+export default Result;

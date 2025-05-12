@@ -1,15 +1,145 @@
-L'intelligence artificielle (IA) est un domaine de l'informatique qui vise à créer des systèmes capables de réaliser des tâches qui, normalement, nécessiteraient l'intelligence humaine. Ces tâches incluent notamment :
+Un dataset est simplement un ensemble de données structurées, généralement organisé sous forme de tableau avec des colonnes (variables) et des lignes (observations ou enregistrements). Dans votre cas, comme vous travaillez sur l'attrition des clients, le dataset doit contenir des informations sur des clients, comme leurs caractéristiques et leur comportement, afin de prédire s'ils quitteront ou non l'entreprise.
 
-L'apprentissage (machine learning, deep learning)
+Le contenu du dataset pour l'attrition des clients
+Un dataset sur l'attrition des clients peut contenir des colonnes comme celles-ci :
 
-Le raisonnement (résolution de problèmes, prise de décision)
+Identifiants :
 
-La perception (vision par ordinateur, reconnaissance vocale)
+ClientID : Numéro unique attribué à chaque client.
+Caractéristiques personnelles :
 
-La compréhension du langage (traitement du langage naturel, chatbots)
+Age : Âge du client.
+Gender : Sexe du client (Male ou Female).
+Données sur l'utilisation :
 
-L'interaction (robots, assistants virtuels)
+Tenure : Nombre d'années que le client est resté avec l'entreprise.
+MonthlyCharges : Montant facturé mensuellement au client.
+TotalSpent : Montant total dépensé par le client.
+Services utilisés :
 
-L'IA peut être faible (ou étroite), c'est-à-dire spécialisée dans une tâche précise (comme les recommandations d'Amazon ou la reconnaissance faciale), ou forte (théorique), c'est-à-dire capable de raisonner comme un humain sur n'importe quel sujet (ce qui n'existe pas encore).
+HasPhoneService : Le client a-t-il un abonnement téléphonique ? (Yes ou No).
+HasInternetService : Le type de service Internet utilisé (DSL, Fiber optic, ou No).
+Détails du contrat :
 
-Aujourd'hui, l'IA est utilisée dans de nombreux domaines : santé, finance, transports, jeux vidéo, etc.
+ContractType : Type de contrat (Month-to-month, One year, ou Two year).
+PaymentMethod : Mode de paiement préféré (Credit card, Bank transfer, etc.).
+Cible à prédire :
+
+Attrition : Indique si le client a quitté l'entreprise (Yes ou No).
+
+Que contient le fichier que vous devez charger ?
+Le fichier que vous devez charger doit contenir :
+
+Les colonnes décrites ci-dessus (ou similaires).
+Une variable cible (Attrition) pour indiquer si le client a quitté l'entreprise.
+Un nombre suffisant d'observations (lignes) pour effectuer une analyse. Par exemple, 500 à 1000 lignes seraient idéales pour s'entraîner sur un modèle machine learning.
+Pourquoi ces informations sont nécessaires ?
+Ces caractéristiques permettent de construire des modèles capables de prédire l'attrition en fonction des comportements observés dans les données historiques.
+Par exemple, un client avec une faible durée (Tenure) et des charges élevées (MonthlyCharges) pourrait avoir une probabilité plus élevée de quitter l'entreprise.
+-----------------------------------------------------------------------------------------------------------
+
+Exercice : Prédiction de l'Attrition des Clients
+1. Compréhension du problème (Compréhension)
+L'objectif principal est de prédire si un client va quitter l'entreprise (Attrition) en fonction de ses caractéristiques et comportements. Pour cela :
+
+Étudiez les données pour comprendre les variables disponibles.
+Analysez la signification de chaque variable pour établir leur pertinence dans la prédiction de l'attrition.
+2. Collecte des données (Collecte)
+Les données concernant l'attrition des clients sont déjà fournies dans un fichier CSV. Cette étape peut être sautée.
+
+3. Prétraitement des données (Prétraitement)
+Voici les étapes suivies pour nettoyer et préparer les données :
+
+Gestion des valeurs manquantes :
+Vérifiez si certaines colonnes ont des valeurs manquantes et appliquez des traitements adaptés (par exemple, imputation avec la moyenne ou la médiane).
+
+Traitement des variables catégorielles :
+Encodez les colonnes catégorielles (Gender, HasInternetService, etc.) en valeurs numériques avec Label Encoding ou One-Hot Encoding.
+
+Standardisation/Normalisation :
+Appliquez une standardisation sur les colonnes numériques (Age, MonthlyCharges, etc.) pour uniformiser les échelles.
+
+Code d'exemple :
+
+python
+Copier le code
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+
+# Gestion des valeurs manquantes (si nécessaire)
+df.fillna(df.median(), inplace=True)
+
+# Encodage des variables catégoriques
+categorical_columns = ['Gender', 'HasDependents', 'HasPhoneService', 'HasInternetService', 'ContractType', 'PaymentMethod']
+encoder = LabelEncoder()
+for col in categorical_columns:
+    df[col] = encoder.fit_transform(df[col])
+
+# Standardisation des colonnes numériques
+numerical_columns = ['Age', 'Tenure', 'MonthlyCharges', 'TotalSpent']
+scaler = StandardScaler()
+df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
+4. Analyse exploratoire des données (Analyse)
+Effectuez une analyse exploratoire pour identifier les relations entre les variables et la cible Attrition.
+
+Statistiques descriptives : Analysez les moyennes, médianes et écarts-types.
+Visualisations : Créez des graphiques comme des histogrammes, des boîtes à moustaches, et des matrices de corrélation.
+Code d'exemple :
+
+python
+Copier le code
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Matrice de corrélation
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.show()
+
+# Distribution de l'attrition
+sns.countplot(data=df, x='Attrition')
+plt.show()
+5. Entraînement du modèle (Entraînement)
+Sélectionnez et entraînez plusieurs modèles pour prédire l'attrition.
+
+Modèles à tester : Régression logistique, Random Forest, et Gradient Boosting.
+Division des données : Séparez le dataset en un ensemble d'entraînement (70%) et un ensemble de test (30%).
+Code d'exemple :
+
+python
+Copier le code
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+# Division des données
+X = df.drop(columns=['Attrition'])
+y = df['Attrition'].apply(lambda x: 1 if x == 'Yes' else 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Entraînement d'un modèle Random Forest
+model = RandomForestClassifier(random_state=42)
+model.fit(X_train, y_train)
+6. Évaluation et test du modèle (Test)
+Évaluez les performances : Utilisez des métriques comme la précision, le rappel, le F1-score et l'AUC-ROC.
+Comparez plusieurs modèles pour identifier le plus performant.
+Code d'exemple :
+
+python
+Copier le code
+from sklearn.metrics import classification_report, roc_auc_score
+
+# Prédictions
+y_pred = model.predict(X_test)
+y_proba = model.predict_proba(X_test)[:, 1]
+
+# Évaluation
+print(classification_report(y_test, y_pred))
+print("AUC-ROC :", roc_auc_score(y_test, y_proba))
+Important : Justification et Analyse
+Choix des modèles : Expliquez pourquoi vous avez sélectionné des modèles spécifiques (par exemple, Random Forest pour sa capacité à capturer des relations complexes).
+Traitement des données : Détaillez les raisons de chaque étape de prétraitement.
+Résultats : Présentez et discutez les forces et limites de vos résultats en comparant les métriques obtenues pour chaque modèle.
+Rendez le tout sous forme d'un rapport clair et structuré dans Jupyter Notebook avec code, graphiques et interprétations.
+
+
+
+
